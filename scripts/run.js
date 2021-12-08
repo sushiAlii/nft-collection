@@ -1,4 +1,5 @@
 const main = async () => {
+  // eslint-disable-next-line no-undef
   const nftContractFactory = await hre.ethers.getContractFactory("MyEpicNFT");
   const nftContract = await nftContractFactory.deploy();
   await nftContract.deployed();
